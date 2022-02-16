@@ -34,12 +34,13 @@ parsing_a_command()
 	echo "===================================="
 	find $path -path "$path/ex*/*.c" | sed "s/\.\/ex./Exercício /g" | grep -Po 'ex.*' | sort
 	echo "===================================="
-	compile_files $path
+	compile_files $ex $path
 }
 
 compile_files()
 {
-	path=$1
+	ex=$1
+	path=$2
 	echo "Criando diretório de testes..."
 	
 	if [ "$path/testes" ]
@@ -52,13 +53,18 @@ compile_files()
 	for ex in $(find $path -path "$path/ex*/*.c");
 	do
 		echo $ex
-		filename=$(basename $ex)
-		echo $filename
-		$compile $ex -o "$test_path/$filename.out"
+		#basedir=$(dirname $0)
+		for baseEx in $(find "$basedir/C$1/" -type f | sort)
+		do
+			#echo $baseEx
+			#$($compile $baseEx $ex -o $test_path/$(basename $ex.out))
+		done
+		#filename=$(basename $ex)
+		#echo $filename
+		#$compile $ex -o "$test_path/$filename.out"
 	done;
 }
 
-echo $(pwd)
 if [ $2 ]
 then
    parsing_a_command $1 $2
