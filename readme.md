@@ -16,3 +16,6 @@ campnett         |       <01>      | ./intra/mni-san
 nome-do-programa | número-da-lista | path da lista
 ```
 
+## Créditos
+
+https://github.com/iaZe/BaseCamp-Revision
