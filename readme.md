@@ -11,8 +11,8 @@ tudo na mão (Somos programadores preguiçosos!).
 
 ```sh
 
-campnett         |-<c/shell>     |<01...11>
+campnett         |       <01>      | ./intra/mni-san
 
-nome-do-programa | tema-da-lista | número-da-lista
+nome-do-programa | número-da-lista | path da lista
 ```
 
