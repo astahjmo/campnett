@@ -3,7 +3,7 @@
 
 # O que é o CampNett? 
 
-CampNett é um programa para testes automotizados de exercícios da 42sp,
+CampNett é um programa para testes automatizados de exercícios da 42sp,
 feito para conseguir progredir nas avaliações sem necessecidade de escrever
 tudo na mão (Somos programadores preguiçosos!).
 
